@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input{
+    margin: 5px;
+    padding: 10px;
+    height: 20px;
+    width: 250px;
+    min-width: 50vh;
+    font-weight: 700;
+}
+
+.add-phone{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    margin: 0 5px;
+    padding: 0 5px;
+    height: 24px;
+}
+
+textarea{
+    padding: 10px;
+    margin: 5px;
+    height: 20vh;
+    width: 250px;
+    min-width: 50vh;
+}
+
+.send-form{
+    margin-top: 5px;
+    height: 35px;
+    width: 100px;
+    border-radius: 25px;
+
+    font-size: 18px;
+    background-color: #777;
+    color: #fff;
+    outline: none;
+}
