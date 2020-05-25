@@ -1,0 +1,38 @@
+1) Вывести список сотрудников, получающих максимальную заработную плату в своем отделе:
+
+SELECT*
+FROM Employee
+WHERE MAX(Salary)  
+GROUP BY Department_id    
+
+
+2) Вывести список ID отделов, количество сотрудников в которых не превышает 3 человек
+
+SELECT Department_id
+FROM Employees
+GROUP BY Department_id
+HAVING COUNT (*) <= 3;
+
+
+4) Добавить в БД новый отдел
+
+INSERT INTO Department 
+(NAME)
+VALUES
+('NEW_DEPT')
+
+
+6) Удалить отдел и всех сотрудников, привязанных к этому отделу
+
+DELETE *
+FROM Employees
+WHERE Department_id =7    -- id взят для примера
+
+DELETE 
+FROM Department
+WHERE Department_id = 7  
+
+Решения по задачам 1, 2 и 3 доступны по ссылке: https://habr.com/ru/post/181033/
+Но я, конечно, честно пытался решать сам. 
+ 
+
